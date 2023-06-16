@@ -13,5 +13,5 @@ public:
 	StackArray() {
 		top = -1;
 	}
-
+	 
 	
