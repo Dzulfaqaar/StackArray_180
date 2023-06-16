@@ -45,7 +45,7 @@ public:
 			cout << "\nstack is empty." << endl;
 		}
 		else {
-			for (int tmp = 0; tmp <= top; tmp++) {
+			for (int tmp = 0; tmp >= top; tmp--) {
 				cout << stack_array[tmp] << endl;
 			}
 		}
@@ -69,12 +69,23 @@ int main() {
 			cin >> element;
 			s.push(element);
 		}
-		case '2' :
+		case '2':
 			if (s.empty()) {
 				cout << "\nstack is empty. " << endl;
 				break;
 			}
 			s.pop();
 			break;
+		case '3' :
+			s.display();
+			break;
+		case '4' :
+			return 0;
+		default:
+			cout << "\n Invalid choice" << endl;
+			break;
+		}
+	}
+}
 
 		
