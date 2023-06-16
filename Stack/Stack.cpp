@@ -13,17 +13,19 @@ public:
 	StackArray() {
 		top = -1;
 	}
-	int push(int element) {
+	int push() {
+		cout << "\nenter an element";
+		int element;
+		cin >> element;
+
 		if (top == 4) {//step 1
 			cout << "Number of data exceeds the limit.  " << endl;
-			return 0;
+			return ;
 		}
 		top++;
 		stack_array[top] = element; //step 3
 		cout << endl;
-		cout << element << "ditambhakan(pushed)" << endl;
-
-		return element;
+		cout << element << "ditambahkan(pushed)" << endl;
 	}
 
 	void pop() {
@@ -64,10 +66,8 @@ int main() {
 		cin >> ch;
 		switch (ch) {
 		case'1': {
-			cout << "\nelement an element :";
-			int element;
-			cin >> element;
-			s.push(element);
+			s.push();
+			break;
 		}
 		case '2':
 			if (s.empty()) {
