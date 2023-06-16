@@ -62,4 +62,6 @@ int main() {
 		cout << "4. exit\n";
 		cout << "\nenter your choice: ";
 		cin >> ch;
+		switch (ch) {
+		case'1': {
 		
