@@ -64,4 +64,9 @@ int main() {
 		cin >> ch;
 		switch (ch) {
 		case'1': {
+			cout << "\nelement an element :";
+			int element;
+			cin >> element;
+			s.push(element);
+		}
 		
