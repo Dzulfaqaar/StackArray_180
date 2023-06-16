@@ -69,4 +69,6 @@ int main() {
 			cin >> element;
 			s.push(element);
 		}
+		case '2' :
+			if (s.empty()) {
 		
